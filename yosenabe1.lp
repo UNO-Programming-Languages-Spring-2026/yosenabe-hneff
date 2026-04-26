@@ -1,4 +1,4 @@
-horizonal_path(X,Y,XX) :- 
+horizontal_path(X,Y,XX) :- 
     number(X,Y,_), area(XX,Y,_), XX != X,
     #count{ Xm : cell(Xm,Y), Xm > X, Xm < XX } = XX - X - 1, XX > X.
 
